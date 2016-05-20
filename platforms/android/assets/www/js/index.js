@@ -39,6 +39,7 @@ var app = {
         // Should be called once the device is registered successfully with Apple or Google servers
         window.plugins.PushbotsPlugin.on("registered", function(token){
             alert("Registro 1"+token);
+            window.plugins.PushbotsPlugin.updateAlias("KshaFone");
         });
 
         window.plugins.PushbotsPlugin.getRegistrationId(function(token){
