@@ -38,13 +38,13 @@ var app = {
 
         // Should be called once the device is registered successfully with Apple or Google servers
         window.plugins.PushbotsPlugin.on("registered", function(token){
-            alert("Registro 1"+token);
+            alert("Registro UNO "+token);
             window.plugins.PushbotsPlugin.updateAlias("KshaFone");
         });
 
-        window.plugins.PushbotsPlugin.getRegistrationId(function(token){
+        /*window.plugins.PushbotsPlugin.getRegistrationId(function(token){
             alert("Registro 2:" + token);
-        });
+        });*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
