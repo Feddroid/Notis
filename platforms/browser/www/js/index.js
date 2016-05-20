@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        window.plugins.PushbotsPlugin.initialize("573f53354a9efab77c8b456b", {"android":{"sender_id":"484433023834"}});
+        window.plugins.PushbotsPlugin.initialize("573773444a9efa01eb8b4567", {"android":{"sender_id":"975648338103"}});
 
         // Should be called once the device is registered successfully with Apple or Google servers
         window.plugins.PushbotsPlugin.on("registered", function(token){
@@ -42,7 +42,7 @@ var app = {
         });
 
         window.plugins.PushbotsPlugin.getRegistrationId(function(token){
-            console.log("Registro 2:" + token);
+            alert("Registro 2:" + token);
         });
     },
     // Update DOM on a Received Event

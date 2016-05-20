@@ -42,7 +42,7 @@ var app = {
         });
 
         window.plugins.PushbotsPlugin.getRegistrationId(function(token){
-            console.log("Registro 2:" + token);
+            alert("Registro 2:" + token);
         });
     },
     // Update DOM on a Received Event
