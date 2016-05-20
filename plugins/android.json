@@ -1,0 +1,79 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.notix.notis"
+        },
+        "pushbots-cordova-plugin": {
+            "PACKAGE_NAME": "com.notix.notis"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-android-support-v4": {
+            "PACKAGE_NAME": "com.notix.notis"
+        }
+    }
+}
