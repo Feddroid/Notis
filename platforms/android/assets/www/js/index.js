@@ -42,7 +42,7 @@ var app = {
             window.plugins.PushbotsPlugin.updateAlias("KshaaFone");
         });
 
-        window.plugins.PushbotsPlugin.unregister();
+        //window.plugins.PushbotsPlugin.unregister();
 
         /*window.plugins.PushbotsPlugin.getRegistrationId(function(token){
             alert("Registro 2:" + token);
