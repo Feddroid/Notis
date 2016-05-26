@@ -40,14 +40,13 @@ var app = {
         window.plugins.PushbotsPlugin.on("registered", function(token){
             alert("Registro UNOs "+token);
             window.plugins.PushbotsPlugin.updateAlias("KsaFone");
-            
         });
 
         //window.plugins.PushbotsPlugin.unregister();
 
-        /*window.plugins.PushbotsPlugin.getRegistrationId(function(token){
-            alert("Registro 2:" + token);
-        });*/
+        window.plugins.PushbotsPlugin.getRegistrationId(function(token){
+            alert("Registro 2: " + token);
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
