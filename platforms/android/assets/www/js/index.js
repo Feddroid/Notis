@@ -39,7 +39,7 @@ var app = {
         // Should be called once the device is registered successfully with Apple or Google servers
         window.plugins.PushbotsPlugin.on("registered", function(token){
             alert("Registro UNOp "+token);
-            window.plugins.PushbotsPlugin.unregister();
+            window.plugins.PushbotsPlugin.unregister("KsaFozne");
             window.plugins.PushbotsPlugin.updateAlias("KsaFozne");
         });
 
