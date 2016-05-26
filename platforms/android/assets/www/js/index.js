@@ -37,12 +37,20 @@ var app = {
         window.plugins.PushbotsPlugin.initialize("573773444a9efa01eb8b4567", {"android":{"sender_id":"975648338103"}});
 
         // Should be called once the device is registered successfully with Apple or Google servers
-        window.plugins.PushbotsPlugin.on("registered", function(token){
+
+        window.plugins.PushbotsPlugin.getRegistrationId(function(token){
+               // console.log("Registration Id:" + token);
+                 alert("Registration Id: "+token);
+        });
+
+        /*window.plugins.PushbotsPlugin.on("registered", function(token){
             
             window.plugins.PushbotsPlugin.updateAlias("KsaFozne");
+
+
             alert("Registro UNOp "+token);
             window.plugins.PushbotsPlugin.unregister();
-        });
+        });*/
 
         //window.plugins.PushbotsPlugin.unregister();
 
