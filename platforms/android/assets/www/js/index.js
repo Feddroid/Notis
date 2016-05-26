@@ -37,9 +37,9 @@ var app = {
         window.plugins.PushbotsPlugin.initialize("573773444a9efa01eb8b4567", {"android":{"sender_id":"975648338103"}});
 
         // Should be called once the device is registered successfully with Apple or Google servers
-        window.plugins.PushbotsPlugin.on("registered", function(token){
-            alert("Registro UNOs "+token);
-            window.plugins.PushbotsPlugin.updateAlias("KsaFone");
+        window.plugins.PushbotsPlugin.on("registered", function(token,data){
+            alert("Registro UNOsx "+data);
+            window.plugins.PushbotsPlugin.updateAlias("KsaFozne");
         });
 
         //window.plugins.PushbotsPlugin.unregister();
