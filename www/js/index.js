@@ -40,7 +40,15 @@ var app = {
         /*window.plugins.PushbotsPlugin.on("registered", function(token){
             alert("Registro 1"+token);
         });*/
+        
+        function disp(pos) {
+        $('.lat-view').html(pos.coords.latitude);
+        $('.long-view').html(pos.coords.longitude);
+    }
 
+    $('#getIt').click(function() {
+        navigator.geolocation.getCurrentPosition(disp);
+    });
        
 
         /*window.plugins.PushbotsPlugin.getRegistrationId(function(token){
