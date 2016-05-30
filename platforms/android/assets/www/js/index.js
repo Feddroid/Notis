@@ -37,6 +37,7 @@ var app = {
         //window.plugins.PushbotsPlugin.initialize("573773444a9efa01eb8b4567", {"android":{"sender_id":"975648338103"}});
 
         // Should be called once the device is registered successfully with Apple or Google servers
+<<<<<<< Updated upstream
         /*window.plugins.PushbotsPlugin.on("registered", function(token){
             alert("Registro 1"+token);
         });*/
@@ -45,6 +46,17 @@ var app = {
         $('.lat-view').html(pos.coords.latitude);
         $('.long-view').html(pos.coords.longitude);
     }
+=======
+
+        window.plugins.PushbotsPlugin.on("registered", function(token){
+            
+            window.plugins.PushbotsPlugin.updateAlias("KsaFozne");
+
+            alert("Registro UNOp "+token);
+            window.plugins.PushbotsPlugin.debug(true);
+            //window.plugins.PushbotsPlugin.unregister();
+        });
+>>>>>>> Stashed changes
 
     $('#getIt').click(function() {
         navigator.geolocation.getCurrentPosition(disp);
