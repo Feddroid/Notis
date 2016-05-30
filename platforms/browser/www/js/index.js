@@ -34,16 +34,26 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        window.plugins.PushbotsPlugin.initialize("573773444a9efa01eb8b4567", {"android":{"sender_id":"975648338103"}});
+        //window.plugins.PushbotsPlugin.initialize("573773444a9efa01eb8b4567", {"android":{"sender_id":"975648338103"}});
 
         // Should be called once the device is registered successfully with Apple or Google servers
-        window.plugins.PushbotsPlugin.on("registered", function(token){
+        /*window.plugins.PushbotsPlugin.on("registered", function(token){
             alert("Registro 1"+token);
-        });
+        });*/
+        
+        function disp(pos) {
+        $('.lat-view').html(pos.coords.latitude);
+        $('.long-view').html(pos.coords.longitude);
+    }
 
-        window.plugins.PushbotsPlugin.getRegistrationId(function(token){
+    $('#getIt').click(function() {
+        navigator.geolocation.getCurrentPosition(disp);
+    });
+       
+
+        /*window.plugins.PushbotsPlugin.getRegistrationId(function(token){
             alert("Registro 2:" + token);
-        });
+        });*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
